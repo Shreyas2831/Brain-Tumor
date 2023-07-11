@@ -1,0 +1,77 @@
+{% extends "import.html" %} 
+{% block content %}
+
+    <form style="background-color:powderblue;">
+        <div class="row">
+            <div class="col-md-4">
+                <label>Patient's Name<span class="required" style="color: red">*</span></label>
+                <div class="form-group">
+                    <input type="text" id="fname" name="fname">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label>Date<span class="required" style="color: red">*</span></label>
+                <div class="form-group">
+                    <input type="text" id="fname" name="fname">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>MR No.<span class="required" style="color: red">*</span></label>
+                <div class="form-group">
+                    <input type="text" id="fname" name="fname">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Age<span class="required" style="color: red">*</span></label>
+                <div class="form-group">
+                    <input type="text" id="fname" name="fname">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label>Sex<span class="required" style="color: red">*</span></label>
+                <div class="form-group">
+                    <input type="text" id="fname" name="fname">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label>Doctor's Name<span class="required" style="color: red">*</span></label>
+                <div class="form-group">
+                    <input type="text" id="fname" name="fname">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+    <center>
+        <br><h2>Brain Tumor Classification</h2><br>
+
+        <form id="upload-file" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="btn btn-success" id="imageUpload" accept=".png, .jpg, .jpeg">
+        </form>
+
+
+        <div class="image-section" style="display:none;">
+            <img id="imagePreview" class="img-responsive" src="#" style="width:300px;height:300px;" /><br><br>
+            <div>
+                <button type="button" class="btn btn-info btn-lg " id="btn-predict">Predict!</button>
+            </div>
+        </div>
+
+
+
+        <div class="loader" style="display:none;"></div>
+
+        <h3 id="result">
+            <span> </span>
+        </h3>
+
+
+    </center><br><br>
+
+    <button onclick="window.print()" style="background-color: #D2B4DE;">Print</button>
+
+{% endblock %}
