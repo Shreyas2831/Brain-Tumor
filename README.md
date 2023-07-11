@@ -3,6 +3,10 @@
 ## Overview
 The Brain Tumor Detection and Classification project aims to detect and classify brain tumors using medical imaging data. This README file provides an overview of the project, its functionalities, and instructions for usage.
 
+## Dataset
+Br35H :: Brain Tumor Detection 2020
+**Link**:- https://www.kaggle.com/datasets/ahmedhamada0/brain-tumor-detection
+
 ## Features
 The project offers the following features:
 1. Brain Tumor Detection: Given a medical image of the brain, the system can detect the presence of a brain tumor.
